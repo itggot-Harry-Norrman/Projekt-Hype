@@ -2,10 +2,9 @@ body {
   margin: 0;
 }
 .header {
-    background-image: url(http://www.wildtextures.com/wp-content/uploads/2012/01/wildtextures-creased-black-paper-texture.jpg);
+    background-image: url(http://i.imgur.com/5mySMW0.jpg);
     background-size: 100vw;
     width: 100vw;
-    box-shadow:
     -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
