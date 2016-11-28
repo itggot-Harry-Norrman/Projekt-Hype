@@ -1,17 +1,22 @@
 body {
   margin: 0;
   background-image: url(http://i.imgur.com/nbejb4J.jpg);
-  background-size: 100vw 100vh;
+  background-size: 2048 747px;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  background-color: black;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
   overflow-x:hidden;
 }
 .header {
     background-image: url(http://i.imgur.com/5mySMW0.jpg);
-    background-size: 100vw 25vh;
-    width: 100vw;
-    height: 20vh;
+    background-size: 3024px 378.5px;
+    background-position: right;
+    min-width: 100vw;
+    max-width: 3024px;
+    height: 15vh;
     -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
