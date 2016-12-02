@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Rick Astley</title>
-    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/upcoming.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="icon" href="http://a2.mzstatic.com/eu/r30/Video/v4/6c/20/2e/6c202eff-36a4-988e-1d77-e0d0ec606ec9/cover229x229-65.jpeg">
   </head>
@@ -25,34 +25,51 @@
     </div>
   </header>
   <div class="midbox">
-    <div class="contact">
-      <div class="contitle">
-        <h3>Contact Rick</h3>
+    <div class="centering">
+    <div class="slideshow">
+      <div class="mySlides fade">
+        <img src="./img/vinyl.jpg" alt="vinyl cover" class="size">
+            <div class="text">New album coming soon</div>
       </div>
-      <div class="conbox">
-        <div class="textbox">
-          <a href="https://www.facebook.com/RickAstley/"><p>Facebook</p></a>
-        </div>
-        <div class="textbox">
-          <a href="https://www.instagram.com/officialrickastley/"><p>Instagram</p></a>
-        </div>
+      <div class="mySlides fade">
+        <img src="./img/outnow.jpg" alt="Rick album cover" class="size">
+            <div class="text">The favourite</div>
       </div>
-      <div class="conbox">
-        <div class="textbox">
-          <a href="https://www.facebook.com/groups/RickAstleyOFC/"><p>Fan page</p></a>
-        </div>
-        <div class="textbox">
-          <a href="http://www.rickastley.co.uk/"><p>Official Website</p></a>
-        </div>
+      <div class="mySlides fade">
+        <img src="./img/vinyl.jpg" alt="vinyl cover" class="size">
+            <div class="text">The last album</div>
       </div>
-        <div class="conbox">
-          <div class="textbox">
-            <a href="https://twitter.com/rickastley"><p>Twitter</p></a>
-          </div>
-          <div class="textbox">
-            <a href="#"><p>info@rickastley.co.uk</p></a>
-          </div>
-        </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+    </div>
     </div>
   </div>
   </body>
